@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Custom Rich Text Editor
 
-## Getting Started
+A lightweight, customizable, and developer-friendly **Rich Text Editor** built from scratch.  
+Designed for simplicity, speed, and full control — without relying on heavy external libraries.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Features
+
+- **Minimal & Clean UI** for a distraction-free editing experience  
+- **Custom Toolbar** (bold, italic, underline, lists, headings, links, and more)  
+- **Lightweight & Fast** — no large frameworks required  
+- **Extensible Architecture** — easily add your own actions/tools  
+- **Real-time Output** in HTML (and optionally JSON)  
+- **Responsive & Mobile-ready**  
+- **Fully Customizable** (styles, toolbar items, shortcuts)
+
+---
+
+## 🔧 Tech Stack
+
+- **HTML**, **CSS**, **JavaScript**  
+- Uses browser **Selection & Range APIs** for text formatting  
+- Custom event handlers & modular action system
+
+---
+
+## 🚀 Why I Built This
+
+Most editors are either too heavy, too limited, or too complex to style.  
+This project gives you **full control** over the UI, behavior, and output — perfect for personal projects or lightweight web apps.
+
+---
+
+## 📦 Installation / Usage
+
+```html
+<div id="editor"></div>
+
+<script src="/your-editor.js"></script>
+<script>
+  const editor = new MyRichTextEditor('#editor', {
+    placeholder: 'Start typing...',
+  });
+</script>
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📄 Output
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This editor provides clean, developer-friendly output with zero clutter:
 
-## Learn More
+- **Clean HTML** — formatted content without unnecessary inline styles  
+- **Optional JSON Output** — structure your content for custom rendering  
+- **No Wrapper Junk** — only the content you write, nothing extra  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠 Roadmap / Future Enhancements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Planned improvements and features:
 
-## Deploy on Vercel
+- **Dark Mode** — built-in theme switching  
+- **Plugin System** — extend functionality with custom plugins  
+- **Markdown Shortcuts** — `**bold**`, `# Heading`, `- List`, etc.  
+- **Drag & Drop Image Upload** — quick media insertion  
+- **History Manager** — improved undo & redo experience  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 Contributing
+
+Contributions are highly appreciated!  
+If you’d like to help improve the editor:
+
+- Open an **issue** for bugs or suggestions  
+- Submit a **pull request** with code improvements  
+- Share your ideas to enhance the editor’s UX or performance  
+
+Your support makes this project better for everyone.
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** — you’re free to use, modify, and distribute it.
+
+---
+
+## Need More?
+
+I can also add:
+
+- ✔ **Badges** (npm version, GitHub stars, license, issues, etc.)  
+- ✔ **Screenshots / GIF demos**  
+- ✔ **Advanced usage examples**  
+- ✔ **Full API documentation**  
+
+Just let me know!

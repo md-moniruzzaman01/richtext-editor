@@ -1,10 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import RichTextEditor from "./RichTextEditor";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
+      <RichTextEditor />
+      {/* <main className={styles.main}>
         <Image
           className={styles.logo}
           src="/next.svg"
@@ -45,7 +47,7 @@ export default function Home() {
             Read our docs
           </a>
         </div>
-      </main>
+      </main> */}
       <footer className={styles.footer}>
         <a
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
